@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+:root {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-size: 18px;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 20px;
+  padding: 20px 40px;
+  background: #8cb9ab;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.button {
+  background-color: #1b124fc4;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  position: relative;
+}
+
+.news-content {
+  display: flex;
+  gap: 10px;
+}
+
+.news-date {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.news-text {
+  flex-grow: 1;
+}
+
+.news-list.preload .news-date {
+  height: 14px;
+  width: 100px;
+  color: #808080;
+  background-color: #808080;
+}
+
+.news-list.preload .news-image{
+  width: 320px;
+  height: 240px;
+  background-color: #808080;
+}
+.news-list.preload img {
+  display: none;
+}
+
+.news-list.preload .text {
+  height: 100px;
+  background:
+  linear-gradient(
+    #808080 0%,  #808080 25%,
+    #8cb9ab 25%, #8cb9ab 50%,
+    #808080 50%, #808080 75%,
+    #8cb9ab 75%, #8cb9ab 100%
+  );
+}
+
+.error {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #201f1fcc;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-text {
+  font-size: 20px;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+}
+
+
